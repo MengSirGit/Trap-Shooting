@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>飞碟射击</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="summary">
+        <h1>飞碟射击</h1>
+        <p>使用鼠标瞄准，点击左键进行射击</p>
+        <p>击中<span class="red">红色飞碟</span>增加100分,击中<span class="blue">蓝色飞碟</span>增加200分</p>
+        <p>每击中一个飞碟游戏时长加1秒,倒计时结束即游戏结束</p>
+    </div>
+    <div id="start">START</div>
+    <p id="count">3</p>
+    <a href="#" id="border" class="border" onclick="return false;">
+        <audio id="Audio">
+            <source = src="guy.wav" type="audio/wav">
+        </audio>
+    </a>
+    <h1 id="score" class="score">SCORE:<span>0</span></h1>
+    <h1 id="times" class="times">TIME:<span>20</span></h1>
+    <div id="grass"></div>
+    <div id="root"></div>
+</body>
+<script src="app.js"></script>
+</html>
